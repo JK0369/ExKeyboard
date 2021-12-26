@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650965E8B4FDDA715E834528 /* Pods_ExKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D62CEE73FC33856CAF84EC /* Pods_ExKeyboard.framework */; };
 		C681C29A2778BD0E003E07A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C2992778BD0E003E07A1 /* AppDelegate.swift */; };
 		C681C29C2778BD0E003E07A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C29B2778BD0E003E07A1 /* SceneDelegate.swift */; };
 		C681C29E2778BD0E003E07A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C29D2778BD0E003E07A1 /* ViewController.swift */; };
 		C681C2A12778BD0E003E07A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681C29F2778BD0E003E07A1 /* Main.storyboard */; };
 		C681C2A32778BD11003E07A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C681C2A22778BD11003E07A1 /* Assets.xcassets */; };
 		C681C2A62778BD11003E07A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681C2A42778BD11003E07A1 /* LaunchScreen.storyboard */; };
+		C681C2AE2778BD23003E07A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C2AD2778BD23003E07A1 /* BaseViewController.swift */; };
+		C681C2B02778C6B9003E07A1 /* PassThroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C2AF2778C6B9003E07A1 /* PassThroughView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		C681C2A22778BD11003E07A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C681C2A52778BD11003E07A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C681C2A72778BD11003E07A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C681C2AD2778BD23003E07A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C681C2AF2778C6B9003E07A1 /* PassThroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThroughView.swift; sourceTree = "<group>"; };
+		E9D62CEE73FC33856CAF84EC /* Pods_ExKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F50744784F63DF40D4A0C5 /* Pods-ExKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExKeyboard.release.xcconfig"; path = "Target Support Files/Pods-ExKeyboard/Pods-ExKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		FE34B3A0018B6672CA272734 /* Pods-ExKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-ExKeyboard/Pods-ExKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650965E8B4FDDA715E834528 /* Pods_ExKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA539D3941EE68C54228D5A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE34B3A0018B6672CA272734 /* Pods-ExKeyboard.debug.xcconfig */,
+				F6F50744784F63DF40D4A0C5 /* Pods-ExKeyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0CCFFC3A8D5518470EF1315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D62CEE73FC33856CAF84EC /* Pods_ExKeyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C681C28D2778BD0E003E07A1 = {
 			isa = PBXGroup;
 			children = (
 				C681C2982778BD0E003E07A1 /* ExKeyboard */,
 				C681C2972778BD0E003E07A1 /* Products */,
+				AA539D3941EE68C54228D5A3 /* Pods */,
+				C0CCFFC3A8D5518470EF1315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				C681C2992778BD0E003E07A1 /* AppDelegate.swift */,
 				C681C29B2778BD0E003E07A1 /* SceneDelegate.swift */,
 				C681C29D2778BD0E003E07A1 /* ViewController.swift */,
+				C681C2AD2778BD23003E07A1 /* BaseViewController.swift */,
+				C681C2AF2778C6B9003E07A1 /* PassThroughView.swift */,
 				C681C29F2778BD0E003E07A1 /* Main.storyboard */,
 				C681C2A22778BD11003E07A1 /* Assets.xcassets */,
 				C681C2A42778BD11003E07A1 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C681C2AA2778BD11003E07A1 /* Build configuration list for PBXNativeTarget "ExKeyboard" */;
 			buildPhases = (
+				FE8C2EA6BDDE9EACB3E5362C /* [CP] Check Pods Manifest.lock */,
 				C681C2922778BD0E003E07A1 /* Sources */,
 				C681C2932778BD0E003E07A1 /* Frameworks */,
 				C681C2942778BD0E003E07A1 /* Resources */,
+				AF52DD033CA0D495CC8D1A22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF52DD033CA0D495CC8D1A22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExKeyboard/Pods-ExKeyboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExKeyboard/Pods-ExKeyboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExKeyboard/Pods-ExKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8C2EA6BDDE9EACB3E5362C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C681C2922778BD0E003E07A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C681C29E2778BD0E003E07A1 /* ViewController.swift in Sources */,
+				C681C2AE2778BD23003E07A1 /* BaseViewController.swift in Sources */,
 				C681C29A2778BD0E003E07A1 /* AppDelegate.swift in Sources */,
+				C681C2B02778C6B9003E07A1 /* PassThroughView.swift in Sources */,
 				C681C29C2778BD0E003E07A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +360,7 @@
 		};
 		C681C2AB2778BD11003E07A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE34B3A0018B6672CA272734 /* Pods-ExKeyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +389,7 @@
 		};
 		C681C2AC2778BD11003E07A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F50744784F63DF40D4A0C5 /* Pods-ExKeyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
